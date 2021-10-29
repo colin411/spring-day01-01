@@ -21,5 +21,11 @@
                     <property name="voPara001" value="王五"></property>
             </bean>
         </property>
+
+<!--        <property name="boPara003" ref="vo2"></property>-->
+<!--        以下方法必须生成get方法-->
+<!--        <property name="boPara003.voPara001" value="王五"></property>-->
     </bean>
+<!--    级联赋值-->
+<!--    <bean id="vo2" class="main.java.com.study.spring.demo005.model.VO.Demo005VO"></bean>-->
 </beans>
