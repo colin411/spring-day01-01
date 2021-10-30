@@ -1,13 +1,13 @@
-package main.java.com.study.spring.demo014.service;
+package main.java.com.study.spring.demo015.service;
 
   /**
-      * @title: Demo014Service
-      * @description: TODO 基于注解注入属性和自动装配
+      * @title: Demo015Service
+      * @description: TODO 基于配置类实现
       * @author: 周卓群
-      * @date: 2021/10/30 10:01
+      * @date: 2021/10/30 9:51
       * @version: 1.0
       */
-public interface Demo014Service {
+public interface Demo015Service {
 
    /**
    * @name: print

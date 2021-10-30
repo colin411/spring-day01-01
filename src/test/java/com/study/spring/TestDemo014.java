@@ -1,8 +1,6 @@
 package test.java.com.study.spring;
 
 
-import main.java.com.study.spring.demo013.service.Demo013Service;
-import main.java.com.study.spring.demo013.service.impl.Demo013ServiceImpl;
 import main.java.com.study.spring.demo014.service.Demo014Service;
 import main.java.com.study.spring.demo014.service.impl.Demo014ServiceImpl;
 import org.junit.Test;
@@ -13,16 +11,17 @@ public class TestDemo014 {
 
 
     /**
-    * @name: testDemoMethod012
-    * @description: TODO
+    * @name: testDemoMethod014
+    * @description: TODO 基于注解注入属性和自动装配
     * @params:
     null
     * @return:
     null
     * @throws: null
     * @author: 周卓群
-    * @date: 2021/10/30-9:22
+    * @date: 2021/10/30-9:41
     */
+
 
     @Test
     public void testDemoMethod014() {
