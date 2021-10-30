@@ -1,4 +1,4 @@
-#Spring学习笔记
+#Spring学习笔记 （spring 5*）
 ##轻量级的开源框架
 *1.低侵入式设计，代码的污染极低。*  
 *2.独立于各种应用服务器，基于Spring框架的应用，可以真正实现Write Once，Run Anywhere的承诺。*  
