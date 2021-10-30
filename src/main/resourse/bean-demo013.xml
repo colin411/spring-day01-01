@@ -10,7 +10,21 @@
 <!--开启组件扫描
     如果扫描多个包 中间逗号隔开
     可以扫描包的上层目录
+    @Component
+    @Service
+    @Controller
+    @Repository
 -->
     <context:component-scan base-package="main.java.com.study.spring.demo013.service"></context:component-scan>
 
+
+<!--    组件扫描的细节配置
+            use-default-filters：不使用默认拦截器
+            context:include-filter 设置扫描那些内同
+            type： annotion controller 表示扫描该包下的controller+
+-->
+    <context:component-scan base-package="main.java.com.study.spring.demo013.service" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        
+    </context:component-scan>
 </beans>
