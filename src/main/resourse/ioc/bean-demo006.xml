@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="demo006" class="main.java.com.study.spring.ioc.demo006.collection.Demo006">
+        <property name="array">
+            <array>
+                <value>a</value>
+                <value>b</value>
+                <value>c</value>
+                <value>d</value>
+                <value>e</value>
+            </array>
+        </property>
+
+        <property name="list">
+            <list>
+                <value>la</value>
+                <value>lb</value>
+                <value>lc</value>
+            </list>
+        </property>
+
+        <property name="map">
+            <map>
+                <entry key="1" value="ma"></entry>
+                <entry key="2" value="mb"></entry>
+                <entry key="3" value="mc"></entry>
+                <entry key="4" value="md"></entry>
+            </map>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>sa</value>
+                <value>sb</value>
+                <value>sc</value>
+                <value>sd</value>
+            </set>
+        </property>
+    </bean>
+</beans>

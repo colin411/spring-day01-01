@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    service和dao对象创建-->
+    <bean id="service" class="main.java.com.study.spring.ioc.demo004.service.impl.Demo004ServiceImpl">
+<!--        name 属性名称-->
+<!--        ref 创建dao bean标签的属性名称-->
+        <property name="dao" ref="daoImpl"></property>
+    </bean>
+
+    <bean id="daoImpl" class="main.java.com.study.spring.ioc.demo004.dao.impl.Demo004DaoImpl"></bean>
+</beans>

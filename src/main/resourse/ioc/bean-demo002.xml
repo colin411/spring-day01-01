@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    使用bean注入属性 和set方法相同-->
+    <bean id="demo002" class="main.java.com.study.spring.ioc.demo002.Demo002">
+        <property name="para01" value="colin"></property>
+        <property name="para02" value="250"></property>
+<!--        注入null-->
+<!--        <property name="para01"><null></null></property>-->
+<!--        注入特殊符号-->
+<!--        <property name="para01">-->
+<!--            <value>-->
+<!--                <![CDATA[-->
+<!--                    <南京>-->
+<!--                ]]>-->
+<!--            </value>-->
+<!--        </property>-->
+    </bean>
+</beans>

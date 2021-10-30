@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--实现自动装配
+    bean 标签属性 autowire
+    有两个属性值： byName：根据属性名称注入 注入值的属性名称和自动装配的值相同
+                byType：根据属性值注入 相同类型的bean不能配置多个
+    -->
+    <bean id="demo011VO" class="main.java.com.study.spring.ioc.demo011.Demo011VO" autowire="byName">
+<!--        <property name="bo" ref="demo011BO"></property>-->
+    </bean>
+
+    <bean id="demo011BO" class="main.java.com.study.spring.ioc.demo011.Demo011BO"></bean>
+</beans>
