@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+<!--    引入contex名称空间-->
+<!--    引入aop名称空间-->
+
+<!--    创建对象-->
+    <bean id="demo018" class="main.java.com.study.spring.aop.demo018.Demo018"></bean>
+    <bean id="demo018Proxy" class="main.java.com.study.spring.aop.demo018.Demo018Proxy"></bean>
+
+<!--    配置aop增强-->
+    <aop:config>
+<!--        配置切入点-->
+        <aop:pointcut id="pointcut" expression="execution(* main.java.com.study.spring.aop.demo018.Demo018.demoMethod001(..))"/>
+
+<!--        配置切面-->
+
+        <aop:aspect ref="demo018Proxy">
+            <aop:before method="before" pointcut-ref="pointcut"></aop:before>
+            <aop:after method="after" pointcut-ref="pointcut"></aop:after>
+            <aop:after-returning method="afterReturning" pointcut-ref="pointcut"></aop:after-returning>
+            <aop:after-throwing method="afterThrowing" pointcut-ref="pointcut"></aop:after-throwing>
+            <aop:around method="around" pointcut-ref="pointcut"></aop:around>
+        </aop:aspect>
+    </aop:config>
+</beans>
