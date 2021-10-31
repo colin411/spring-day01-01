@@ -8,7 +8,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * @author 周卓群
  * @title: AoPDemoConfig002
  * @projectName spring-day01-01
- * @description: TODO 取消配置文件 直接使用注解方式实现
+ * @description: TODO AOP取消配置文件 直接使用注解方式实现
  * @date 2021/10/3014:35
  */
 @Configuration
